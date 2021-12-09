@@ -6,6 +6,6 @@ spec:
   selector:
     app: portfolio-v2
   ports:
-    - port: 8080
+    - port: 80
       targetPort: 5000
   type: LoadBalancer
