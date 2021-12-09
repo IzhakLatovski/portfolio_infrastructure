@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: portfolio-v2
-          image: 006262944085.dkr.ecr.eu-west-2.amazonaws.com/v2-ecr:small-14
+          image: 006262944085.dkr.ecr.eu-west-2.amazonaws.com/v2-ecr:portfolio_v2_41
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
