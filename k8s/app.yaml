@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tasksapp
+  name: portfolio-v2
   labels:
-    app: tasksapp
+    app: portfolio-v2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tasksapp
+      app: portfolio-v2
   template:
     metadata:
       labels:
-        app: tasksapp
+        app: portfolio-v2
     spec:
       containers:
-        - name: tasksapp
-          image: varunkumarg/tasksapp-python:1.0.0
+        - name: portfolio-v2
+          image: 006262944085.dkr.ecr.eu-west-2.amazonaws.com/v2-ecr:small-14
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
